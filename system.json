@@ -1,92 +1,90 @@
 {
-  "id": "tagmar",
-  "title": "Tagmar RPG",
-  "description": "Sistema simples para Tagmar 3.0. Módulo Obrigatório: Compendium Folders, Módulos Recomendados: Bar Brawl, Dice So Nice!, Dice Tray, Portuguese (BR) Core",
-  "version": "1.7.7",
-  "authors": [
-    {
-      "name": "Marcos Walker",
-      "url": "https://github.com/marcoswalker"
+    "id": "tagmar",
+    "title": "Tagmar RPG",
+    "description": "Sistema simples para Tagmar 3.0. Módulo Obrigatório: Compendium Folders, Módulos Recomendados: Bar Brawl, Dice So Nice!, Dice Tray, Portuguese (BR) Core",
+    "version": "1.7.7",
+    "authors": [
+        {
+            "name": "Marcos Walker",
+            "url": "https://github.com/marcoswalker"
+        },
+        {
+            "name": "Vinicius Fernandez",
+            "url": "https://www.youtube.com/channel/UCDyR_0eg3TjV5r5cOUqQaSQ"
+        }
+    ],
+    "media": [
+        {
+            "type": "video",
+            "url": "https://youtu.be/N2yr3L2m2ac?list=PLrRhUsW5zVjALqHoqfyaDXoR"
+        }
+    ],
+    "compatibility": {
+        "minimum": "13",
+        "verified": "13.345"
     },
-    {
-      "name": "Vinicius Fernandez",
-      "url": "https://www.youtube.com/channel/UCDyR_0eg3TjV5r5cOUqQaSQ"
-    }
-  ],
-  "media": [
-    {
-      "type": "video",
-      "url": "https://youtu.be/N2yr3L2m2ac?list=PLrRhUsW5zVjALqHoqfyaDXoR  "version": "1.7.7-foundryV13",
-  "compatibility": {
-    "minimum": "13",
-    "verified": "13.345"
-  },
-  "scripts": [
-  ],
-  "esmodules": [
-    "modules/tagmar.js"
-  ],
-  "styles": [
-    "css/bootstrap-grid.css",
-    "css/sheet.css"
-  ],
-  "packs": [
-    {
-      "name": "criando-fichas",
-      "label": "Criando Fichas",
-      "system": "tagmar",
-      "path": "packs/criando-fichas",
-      "type": "Item",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "GAMEMASTER": "OWNER"
-      }
+    "scripts": [],
+    "esmodules": [
+        "modules/tagmar.js"
+    ],
+    "styles": [
+        "css/bootstrap-grid.css",
+        "css/sheet.css"
+    ],
+    "packs": [
+        {
+            "name": "criando-fichas",
+            "label": "Criando Fichas",
+            "system": "tagmar",
+            "path": "packs/criando-fichas",
+            "type": "Item",
+            "ownership": {
+                "PLAYER": "OBSERVER",
+                "GAMEMASTER": "OWNER"
+            }
+        },
+        {
+            "name": "registro-de-datas",
+            "label": "Registro de Datas",
+            "system": "tagmar",
+            "path": "packs/registro-de-datas",
+            "type": "JournalEntry",
+            "ownership": {
+                "PLAYER": "NONE",
+                "GAMEMASTER": "OWNER"
+            }
+        }
+    ],
+    "languages": [],
+    "relationships": {
+        "requires": [
+            {
+                "id": "barbrawl",
+                "manifest": "https://gitlab.com/woodentavern/foundryvtt-bar-brawl/-/raw/master/src/module.json"
+            },
+            {
+                "id": "drag-ruler",
+                "manifest": "https://raw.githubusercontent.com/manuelVo/foundryvtt-drag-ruler/master/module.json"
+            },
+            {
+                "id": "polyglot",
+                "manifest": "https://github.com/mclemente/fvtt-module-polyglot/releases/latest/download/module.json"
+            },
+            {
+                "id": "tagmar-ammu-nation",
+                "manifest": "https://raw.githubusercontent.com/marcoswalker/tagmar-ammu-nation/master/module.json"
+            },
+            {
+                "id": "tagmartrade",
+                "manifest": "https://raw.githubusercontent.com/marcoswalker/tagmartrade/master/module.json"
+            }
+        ]
     },
-    {
-      "name": "registro-de-datas",
-      "label": "Registro de Datas",
-      "system": "tagmar",
-      "path": "packs/registro-de-datas",
-      "type": "JournalEntry",
-      "ownership": {
-        "PLAYER": "NONE",
-        "GAMEMASTER": "OWNER"
-      }
-    }
-  ],
-  "languages": [
-  ],
-  "relationships": {
-    "requires": [
-      {
-        "id": "barbrawl",
-        "manifest": "https://gitlab.com/woodentavern/foundryvtt-bar-brawl/-/raw/master/src/module.json"
-      },
-
-
-      {
-        "id": "drag-ruler",
-        "manifest": "https://raw.githubusercontent.com/manuelVo/foundryvtt-drag-ruler/master/module.json"
-      },
-      {
-        "id": "polyglot",
-        "manifest": "https://github.com/mclemente/fvtt-module-polyglot/releases/latest/download/module.json"
-      },
-      {
-        "id": "tagmar-ammu-nation",
-        "manifest": "https://raw.githubusercontent.com/marcoswalker/tagmar-ammu-nation/master/module.json"
-      },
-      {
-        "id": "tagmartrade",
-        "manifest": "https://raw.githubusercontent.com/marcoswalker/tagmartrade/master/module.json"
-      }
-    ]
-  },
-  "grid": {
-    "distance": 1.0,
-    "units": "m"
-  },
-  "url": "https://github.com/marcoswalker/tagmar",
-  "manifest": "https://raw.githubusercontent.com/marcoswalker/tagmar/master/system.json",
-  "download": "https://codeload.github.com/marcoswalker/tagmar/zip/master"
+    "grid": {
+        "distance": 1,
+        "units": "m"
+    },
+    "url": "https://github.com/marcoswalker/tagmar",
+    "manifest": "https://raw.githubusercontent.com/marcoswalker/tagmar/master/system.json",
+    "download": "https://codeload.github.com/marcoswalker/tagmar/zip/master"
 }
