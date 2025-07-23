@@ -16,12 +16,10 @@
   "media": [
     {
       "type": "video",
-      "url": "https://youtu.be/N2yr3L2m2ac?list=PLrRhUsW5zVjALqHoqfyaDXoRv2ku6Wxei"
-    }
-  ],
+      "url": "https://youtu.be/N2yr3L2m2ac?list=PLrRhUsW5zVjALqHoqfyaDXoR  "version": "1.7.7-foundryV13",
   "compatibility": {
-    "minimum": "12",
-    "verified": "12"
+    "minimum": "13",
+    "verified": "13.345"
   },
   "scripts": [
   ],
@@ -64,18 +62,8 @@
         "id": "barbrawl",
         "manifest": "https://gitlab.com/woodentavern/foundryvtt-bar-brawl/-/raw/master/src/module.json"
       },
-      {
-        "id": "lib-wrapper",
-        "manifest": "https://github.com/ruipin/fvtt-lib-wrapper/releases/latest/download/module.json"
-      },
-      {
-        "id": "dice-so-nice",
-        "manifest": "https://gitlab.com/riccisi/foundryvtt-dice-so-nice/-/raw/master/module/module.json"
-      },
-      {
-        "id": "socketlib",
-        "manifest": "https://raw.githubusercontent.com/manuelVo/foundryvtt-socketlib/master/module.json"
-      },
+
+
       {
         "id": "drag-ruler",
         "manifest": "https://raw.githubusercontent.com/manuelVo/foundryvtt-drag-ruler/master/module.json"

@@ -83,12 +83,12 @@ Hooks.once("init", function(){
   CONFIG.time.roundTime = 15;
   // Register System Settings
   SystemSettings();
-  Items.unregisterSheet("core", ItemSheet);
-  Items.registerSheet("tagmar", tagmarItemSheet, {makeDefault: true});
+  DocumentSheetConfig.unregisterSheet(Item, "core", ItemSheet);
+  DocumentSheetConfig.registerSheet(Item, "tagmar", tagmarItemSheet, { makeDefault: true });
 
-  Actors.unregisterSheet("core", ActorSheet);
-  Actors.registerSheet("tagmar", tagmarActorSheet, {makeDefault: true});
-  Actors.registerSheet("tagmar", tagmarAltSheet, {makeDefault: false});
+  DocumentSheetConfig.unregisterSheet(Actor, "core", ActorSheet);
+  DocumentSheetConfig.registerSheet(Actor, "tagmar", tagmarActorSheet, { makeDefault: true });
+  DocumentSheetConfig.registerSheet(Actor, "tagmar", tagmarAltSheet, { makeDefault: false });
 
   Handlebars.registerHelper('ifeq', function (a, b, options) {
     if (a == b) { return options.fn(this); }
